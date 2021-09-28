@@ -1,0 +1,75 @@
+body{
+    background-image:url(./images/pattern-background-desktop.svg);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e3e4e8;
+}
+.card{
+    width: 500px;
+    height: 700px;
+    background-color: #F5F5F5;
+    position:absolute;
+    margin:auto;
+    inset:0;
+    box-shadow: 0px 0px 5px 5px #11111110;
+    border-radius: 20px;
+    
+
+}
+.card header{
+    width: 100%;
+    
+}
+
+
+.card header img{
+    width: 100%;
+    
+    
+
+}
+.card section{
+    padding: 20px;
+}
+
+.card section h1{
+    margin: 10px 20px 30px 125px;
+    font-family: 'Lato', sans-serif;
+}
+
+.card section p {
+    color: #87898c;
+    font-family: 'Lato', sans-serif;
+}
+.card section .container{
+    width: 70%;
+    height: 50px;
+    display:flex;
+    gap: 10px;
+}
+.card section .container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.card section .container div h3 {
+    margin: 85px 0px 0px 120px;
+    font-size: 20px;
+}
+
+.card section .container div p{
+    margin: 0px 50px 20px 120px;
+
+}
+
+/*.card section button
+    margin: 25px 50px 0px 0px;
+    border-radius: 30px;
+    width: 80%;
+    background-color: #0937db;
+    font-size: 25px;
+    position: relative;
+    left: 50px;
+
+}*/
