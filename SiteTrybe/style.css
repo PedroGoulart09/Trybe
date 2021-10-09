@@ -274,6 +274,7 @@ section h1 {
 }
 
 .titulo-ceo h1 {
+  text-align: center;
   padding-top: 100px;
 }
 .card {
