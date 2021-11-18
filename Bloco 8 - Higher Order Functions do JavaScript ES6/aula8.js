@@ -29,15 +29,6 @@ const pessoa = {
     }
 }
 
-console.log(pessoa.saudacao(saudacaoAmorosa));
-
-
-
-saudacao: function (funcao, nomePessoa) {
-    return funcao(nomePessoa);
-},
-
-
 console.log(pessoa.saudacao(saudacaoAmorosa, 'Marcia Maria'));
 console.log(pessoa.saudacao(saudacaoSeca, ''));
 
@@ -86,7 +77,5 @@ const dadosEmployee = (nomeCompleto) => {
     const email = `${nomeCompleto.replace(' ', '_').toLowerCase()}@trybe.com`;
     return { nome: nomeCompleto, email: email };
 };
-
-console.log(dadosEmployee('Felipe Castanheira'));
 
 console.log(newEmployees(dadosEmployee));
