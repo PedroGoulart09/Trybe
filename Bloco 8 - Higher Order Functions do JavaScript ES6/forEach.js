@@ -37,7 +37,7 @@ const numbers2 = [11, 24, 39, 47, 50, 62, 75, 81, 96, 100];
 
 const gabinheira = () => {
     let arr2 = [];
-    numbers2.forEach((index) => {
+    numbers2.map((index) => {
         if (index % 5 === 0) {
             arr2.push(index)
 
