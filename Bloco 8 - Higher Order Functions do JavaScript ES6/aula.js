@@ -62,11 +62,17 @@ const books = [
 ];
 
 function authorBornIn1947() {
-    return books.find((value) => value.author.birthYear === 1947).author.name
-}
-console.log(authorBornIn1947);
-
-function authorBornIn1947() {
     return books.find((value) => value.author.birthYear === 1947).author.name;
 };
 console.log(authorBornIn1947());
+
+const names = ['João', 'Irene', 'Fernando', 'Maria'];
+
+const findNameWithFiveLetters = () => {
+    let arr = ''
+    names.find((value) => value.length > arr)
+    return arr;
+
+}
+
+console.log(findNameWithFiveLetters());
