@@ -21,8 +21,14 @@ const age2 = (age) => (
 console.log(age2(objPeople));
 // [ { name: 'Maria', age: 16 }, { name: 'Vitor', age: 15 } ]
 
+//FORMAS DE PEGAR MAIOR NOME EM UM ARRAY
+
 var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
 const result = words.filter((teste) => teste.length > 8);
 
 console.log(result);
+//FORMAS DE PEGAR MAIOR NOME EM UM ARRAY
+let arr = ['bola', 'cueca', 'sol', 'as'];
+let bigWord = arr.reduce((acc, value) => acc.length < value.length ? acc = value : acc)
+console.log(bigWord)
