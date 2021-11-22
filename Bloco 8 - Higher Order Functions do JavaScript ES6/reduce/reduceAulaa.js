@@ -44,11 +44,7 @@ const nomes = [
 ];
 
 const nomesRepetidos = nomes.reduce((accNomes, nome) => {
-    if (Object.keys(accNomes).includes(nome)) {
-        accNomes[nome]++;
-    } else {
-        accNomes[nome] = 1;
-    }
+    Object.keys(accNomes).includes(nome) ? accNomes[nome]++ : accNomes[nome] = 1;
     return accNomes;
 }, {});
 
