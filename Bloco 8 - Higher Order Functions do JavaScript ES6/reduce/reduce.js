@@ -6,19 +6,16 @@ console.log(sumNumbers); // 113
 
 const collection = [1, 2, 3, 4, 5];
 
-const getSum = (accumulator, number) => {
-    console.log(accumulator); // 1 3 6 10
-    return accumulator + number;
-};
+const getSum = collection.reduce((accumulator, number) => accumulator += number);
 
-const sumNumbers = collection.reduce(getSum, 10);
-console.log(sumNumbers); // 15
+
+console.log(getSum); // 15
 
 //maior numero de um array
 
 const numbers = [50, 85, -30, 3, 15];
 
-const reduce = (result, accumulator) => (result < accumulator) ? result : accumulator;
+const reduce = (result, accumulator) => (result > accumulator) ? result : accumulator;
 
 const getSum = numbers.reduce(reduce)
 console.log(getSum);
@@ -233,7 +230,7 @@ const names = [
 ];
 
 function containsA() {
-    return names.reduce((acc, curr) => acc += curr.toLowerCase().split('').filter((value) => value === 'a').length, 0)
+    return names.reduce((acc, cur) => acc += cur.toLowerCase().split('').filter((value) => value === 'a').length, 0)
 }
 console.log(containsA());
 
@@ -245,11 +242,9 @@ const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
 const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
 
 function studentAverage() {
-    return students.map((aluno, index) => ({
-        name: aluno,
-        average: grades[index].reduce((acc, curr) => acc + curr) / grades[index].length,
-    })
-    )
+    return students.map((value, index) => ({
+        name: value,
+        MediaFinal: grades[index].reduce((acc, curr) => acc + curr) / grades[index].length
+    }))
 }
 console.log(studentAverage());
-
