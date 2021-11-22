@@ -1,4 +1,4 @@
-const { cervejas } = require('./dados');
+const { cervejas } = require('./reduceAula');
 // HoF REDUCE
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 // O reduce é uma função muito poderosa, que permite que a gente combine todo o resultado da aplicação da função passada como parâmetro nos elementos do array em um único resultado.

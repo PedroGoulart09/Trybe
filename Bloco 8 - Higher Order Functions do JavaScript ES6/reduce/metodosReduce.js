@@ -1,4 +1,4 @@
-const { cervejas, clientes } = require('./dados');
+const { cervejas, clientes } = require('./reduceAula');
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString
 // O método toLocaleString() retorna uma string com uma representação sensível a linguagem deste número.
 
@@ -7,8 +7,8 @@ const { cervejas, clientes } = require('./dados');
 
 const clientesPorIdade = clientes.reduce(
     (accIdade, cliente) => {
-        if (cliente.idade < 18) return { adulto: accIdade.adulto, menorIdade: accIdade.menorIdade + 1 };
-        return { adulto: accIdade.adulto + 1, menorIdade: accIdade.menorIdade };
+        cliente.idade < 18 ? accIdade.menorIdade += 1 : accIdade.adulto += 1
+        return accIdade
     },
     { adulto: 0, menorIdade: 0 }
 );
