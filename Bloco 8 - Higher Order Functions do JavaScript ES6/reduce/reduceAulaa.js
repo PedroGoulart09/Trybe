@@ -26,10 +26,7 @@ const soma = numeros.reduce((accSoma, numero) => (accSoma += numero), 0);
 console.log('Soma dos números:', soma);
 
 // Apresentar o maior número do vetor com reduce
-const maiorNumero = numeros.reduce((accMaiorNumero, numero) => {
-    if (accMaiorNumero < numero) return numero;
-    return accMaiorNumero;
-});
+const maiorNumero = numeros.reduce((accMaiorNumero, numero) => accMaiorNumero < numero ? numero : accMaiorNumero);
 console.log('O maior número do vetor é:', maiorNumero);
 
 // Verificar quantas vezes cada nome se repete no array de nomes usando o reduce
