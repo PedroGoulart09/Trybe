@@ -4,7 +4,7 @@ const { cervejas, clientes } = require('./reduceAula');
 
 // Verificar quantos clientes são maior de idade e quantos são menor de idade
 // usando reduce
-/* 
+
 const clientesPorIdade = clientes.reduce(
     (accIdade, cliente) => {
         cliente.idade < 18 ? accIdade.menorIdade += 1 : accIdade.adulto += 1
@@ -30,8 +30,7 @@ const valorEmEstoqueDeCervejas = cervejas.reduce((acc, cerveja) => {
     });
     return acc;
 }, []);
-
-console.log(valorEmEstoqueDeCervejas); */
+console.log(valorEmEstoqueDeCervejas);
 
 // Separar as cervejas por fabricante
 
