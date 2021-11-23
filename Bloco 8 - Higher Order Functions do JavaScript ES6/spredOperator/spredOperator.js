@@ -13,7 +13,6 @@ console.log(months);
 
 
 const randomNumbers = [57, 8, 5, 800, 152, 74, 630, 98, 40];
-
 console.log(Math.max(...randomNumbers));
 console.log(Math.min(...randomNumbers));
 
@@ -66,28 +65,23 @@ console.log(teste(5, 10, 20));
 
 
 
-// 3 - Escreva a função personLikes , que dado um objeto de parâmetro que representa uma pessoa, 
-// retorna todos os gostos daquela pessoa, conforme mostrado abaixo:
-// Dica: use object destructuring.
-
-const alex = {
-    name: 'Alex',
-    age: 26,
-    likes: ['fly fishing'],
-    nationality: 'Australian',
-};
-
-const gunnar = {
-    name: 'Gunnar',
-    age: 30,
-    likes: ['hiking', 'scuba diving', 'taking pictures'],
-    nationality: 'Icelandic',
-};
-
-// complete a assinatura da função abaixo
-const personLikes = ({ name, age, likes }) => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
-const { name, age, likes } = personLikes
 
 
-console.log(personLikes(alex))
-console.log(personLikes(gunnar));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
