@@ -248,3 +248,9 @@ function studentAverage() {
     }))
 }
 console.log(studentAverage());
+
+
+const arr = [1, 2, 3]
+
+const a = arr.split('');
+console.log(a);
