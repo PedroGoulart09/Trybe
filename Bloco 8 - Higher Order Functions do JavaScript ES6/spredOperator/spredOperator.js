@@ -46,17 +46,13 @@ const rectangle3 = [6, 9];
 const rectangles = [rectangle1, rectangle2, rectangle3];
 
 rectangles.forEach((rectangle) => {
-    rectangleArea(...rectangle) // altere a chamada da funcao rectangleArea
+    rectangleArea(...rectangle)
 
     console.log(rectangle[0] * rectangle[1]);
 
 });
 
-// 2 - Crie uma função sum que dado um número variável de elementos retorna a soma desses elementos.
-// Dica: use parâmetro rest .
 
-const teste = (...args) => args.reduce((acc, value) => acc + value, 0)
-console.log(teste(5, 10, 20));
 
 
 
