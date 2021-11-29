@@ -135,3 +135,17 @@ getCountry(countryName, printErrorMessage);
 
 // Deve imprimir "Brazil's currency is the Real" no sucesso, ou "Error getting country: Country could not be found" em falha
 getCountry(countryCurrency, printErrorMessage);
+
+
+
+
+
+const teste = (a, b, callback) => {
+    setTimeout(() => {
+        const menos = a - b
+        const soma = a + b
+        console.log(menos);
+        return callback(soma)
+    }, 1000)
+}
+teste(10, 10)
