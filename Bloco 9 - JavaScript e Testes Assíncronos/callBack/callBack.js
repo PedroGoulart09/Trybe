@@ -102,7 +102,7 @@ getUser(userNationality); // deve imprimir "Ivan is Russian" depois de um certo 
 
 
 
-// 1 - A função getCountry abaixo tem aproximadamente 50% de chance de obter com sucesso um país, tendo um callback para poder ser feita qualquer operação sobre o país retornado. Adicione um outro callback para getCountry , de forma que trate a mensagem de erro retornada.
+// 3 - A função getCountry abaixo tem aproximadamente 50% de chance de obter com sucesso um país, tendo um callback para poder ser feita qualquer operação sobre o país retornado. Adicione um outro callback para getCountry , de forma que trate a mensagem de erro retornada.
 
 const countryName = ({ name }) => console.log(`Returned country is ${name}`);
 const countryCurrency = ({ name, currency }) => console.log(`${name}'s currency is the ${currency}`);
