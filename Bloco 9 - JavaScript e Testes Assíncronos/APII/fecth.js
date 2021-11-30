@@ -23,6 +23,7 @@ fetchJoke();
 const fetch = require('node-fetch');
 
 const fetchJoke = () => {
+    //estou forçando o erro para fazer o teste com o .catch
     const url = 'api.chucknorris.io/jokes/random?category=dev';
 
     fetch(url)
