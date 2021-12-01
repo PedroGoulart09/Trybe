@@ -1,7 +1,5 @@
-const getSuperHero = () => {
-    const result = fetch("https://www.superheroapi.com/api.php/4192484924171229/720")
-        .then((response) => response.json())
-        .then((hero) => hero.name)
-        .catch(() => 'erro');
-    return result;
-};
+
+test('Testa se o retorno da requisição com url alterada, retorna o erro, com async/await', async () => {
+    const error = await getSuperHero();
+    expect(error).toMatch('erro');
+});

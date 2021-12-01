@@ -28,4 +28,4 @@ const setCoins = async () => {
         });
 }
 
-window.onload = () => setCoins();
+window.onload = setCoins();
