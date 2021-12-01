@@ -10,4 +10,20 @@ const getSuperHero = () => {
 
 getSuperHero(); // Wonder Woman
 
-module.exports = getSuperHero;
+
+// githubApi.test.js
+
+
+const getRepos = () => {
+    const teste = fetch('https://api.github.com/orgs/tryber/repos')
+        .then((response) => response.json())
+        .then((data) => data.map((repo) => repo.name))
+
+    return teste;
+}
+
+getRepos();
+
+
+module.exports = { getSuperHero, getRepos }
+
