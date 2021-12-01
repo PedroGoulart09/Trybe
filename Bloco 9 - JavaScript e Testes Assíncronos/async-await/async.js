@@ -1,29 +1,20 @@
-// getData.js
 const fetch = require('node-fetch');
+const hero = async () => {
 
-const getSuperHero = () => {
-    const result = fetch('https://www.superheroapi.com/api.php/4192484924171229/720')
-        .then((response) => response.json())
-        .then((hero) => console.log(hero.name));
+
+    const result = await fetch('https://www.superheroapi.com/api.php/4192484924171229/720%27').then((response) => response.json())
+        .then((hero) => hero.name)
+        .catch(error => console.log(error))
     return result;
+
 };
 
-getSuperHero(); // Wonder Woman
+console.log(hero());
+// Wonder Woman
 
-
-// githubApi.test.js
-
-
-const getRepos = () => {
-    const teste = fetch('https://api.github.com/orgs/tryber/repos')
-        .then((response) => response.json())
-        .then((data) => data.map((repo) => repo.name))
-
-    return teste;
+const getSuperHero = async () => {
+    const name = await hero()
+    return name
 }
-
-getRepos();
-
-
-module.exports = { getSuperHero, getRepos }
+console.log(getSuperHero())
 

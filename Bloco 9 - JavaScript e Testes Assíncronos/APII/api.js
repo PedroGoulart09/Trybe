@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const api = async () => {
 
     const url = 'https://api.coincap.io/v2/assets';
@@ -12,20 +13,19 @@ const api = async () => {
 }
 
 
+console.log(api())
 
 const setCoins = async () => {
     const coins = await api();
 
     const coinsList = document.getElementById('list-crypto');
 
-    coins
+    coins.forEach((coin) => {
+        const newLi = document.createElement('li');
+        newLi.innerText = `${coin.name} (${coin.symbol}): ${coin.priceUsd}`;
 
-        .forEach((coin) => {
-            const newLi = document.createElement('li');
-            newLi.innerText = `${coin.name} (${coin.symbol}): ${coin.priceUsd}`;
-
-            coinsList.appendChild(newLi);
-        });
+        coinsList.appendChild(newLi);
+    });
 }
 
 window.onload = setCoins();
