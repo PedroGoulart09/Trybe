@@ -6,15 +6,13 @@ export default function heloo(parm) {
         <div>
 
             <h2>{parm.titulo}</h2>
-
-            <div>
-                <strong> {parm.nome} </strong>
-                tem nota
-                <strong> {parm.nota} </strong>
-                e está
-                <strong> {nota} </strong>
-            </div>
+            <strong> {parm.nome} </strong>
+            tem nota
+            <strong> {parm.nota} </strong>
+            e está
+            <strong> {nota} </strong>
         </div>
+
 
     )
 }

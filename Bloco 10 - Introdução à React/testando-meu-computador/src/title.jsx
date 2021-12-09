@@ -1,6 +1,15 @@
-const title = 'bem vindo ao jsx'
-export default function titulo() {
+import React from "react";
+function Task(value) {
     return (
-        <h1>{title}</h1>
-    )
+        <li>{value}</li>
+    );
 }
+
+const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+
+class App extends React.Component {
+    render() {
+        return tarefas.map((item) => Task(item))
+    }
+}
+export default App;

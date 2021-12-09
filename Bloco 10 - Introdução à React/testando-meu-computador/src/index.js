@@ -1,23 +1,17 @@
 import ReactDOM from 'react-dom';
 import './index.css'
 import React from 'react';
-import PrimeiroComponent from './componente'
 import ReactTitle from './title'
+import ReactHeader from './header'
+import ReactContent from './Content'
 
+const teste = document.getElementById('root')
 ReactDOM.render(
     <div>
+        <ReactHeader />
         <ReactTitle />
-        <PrimeiroComponent nome="pedro"
-            nota={8}
-        />
+        <ReactContent />
 
-
-        <PrimeiroComponent nome="maria"
-            nota={6}
-        />
     </div>,
-    document.getElementById('root')
-
-
-
-)
+    teste
+);
