@@ -10,8 +10,9 @@ ReactDOM.render(
     <div>
         <ReactHeader />
         <ReactTitle />
-        <ReactContent />
-
+        <section className="conteudo2">
+            <ReactContent />
+        </section>
     </div>,
     divHtml
 );

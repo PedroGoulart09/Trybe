@@ -1,7 +1,7 @@
 import React from "react";
 function Task(value) {
     return (
-        <li>{value}</li>
+        <li key={value.toString()}>{value}</li>
     );
 }
 
