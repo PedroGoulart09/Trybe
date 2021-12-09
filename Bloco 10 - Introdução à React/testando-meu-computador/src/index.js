@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom';
-import './index.css'
 import React from 'react';
-import ReactTitle from './title'
-import ReactHeader from './header'
-import ReactContent from './Content'
+import './index.css';
+import ReactTitle from './title';
+import ReactHeader from './header';
+import ReactContent from './Content';
 
-const teste = document.getElementById('root')
+const divHtml = document.getElementById('root');
 ReactDOM.render(
     <div>
         <ReactHeader />
@@ -13,5 +13,5 @@ ReactDOM.render(
         <ReactContent />
 
     </div>,
-    teste
+    divHtml
 );
