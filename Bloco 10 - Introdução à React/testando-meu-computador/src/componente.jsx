@@ -1,5 +1,3 @@
-
-
 export default function heloo(parm) {
     const nota = parm.nota >= 7 ? 'aprovado' : 'reprovado'
     return (
@@ -12,7 +10,5 @@ export default function heloo(parm) {
             e está
             <strong> {nota} </strong>
         </div>
-
-
     )
 }
