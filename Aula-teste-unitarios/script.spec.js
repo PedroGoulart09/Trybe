@@ -38,3 +38,22 @@ describe('Testes relativos a funcao summationOf', () => {
     }).toThrow('Valores nao numericos nao sao aceitos');
   });
 });
+
+//Exemple try catch
+
+let user = {
+  idade: 17
+};
+
+const idadeMinima = 18;
+
+try {
+
+  if (user.idade < idadeMinima) {
+    throw new Error(`A idade minima do usuario deve ser ao menos: ${idadeMinima} anos de idade`);
+  }
+
+  // db.save
+} catch (e) {
+  console.log(e.message);
+}

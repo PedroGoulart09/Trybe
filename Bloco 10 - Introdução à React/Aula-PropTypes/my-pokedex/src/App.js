@@ -1,25 +1,23 @@
 import React, { Component } from 'react'
-import Pokemon from './data'
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        {Pokemon.map((pokemons) => (
+        {this.props.pokemons.map(({ id, name, type, averageWeight, image }) => (
           <section>
             <ul>
-              <li>{pokemons.name}</li>
-              <li>{pokemons.type}</li>
-              <li>{`average Weight : ${pokemons.averageWeight.value} ${pokemons.averageWeight.measurementUnit}`}</li>
+              <li>{name}</li>
+              <li>{type}</li>
+              <li>{`average Weight : ${averageWeight.value} ${averageWeight.measurementUnit}`}</li>
 
-              <img src={pokemons.image} alt="pokemons" />
+              <img src={image} alt="pokemons" />
 
             </ul>
 
           </section>
         ))}
-
       </div>
     )
   }

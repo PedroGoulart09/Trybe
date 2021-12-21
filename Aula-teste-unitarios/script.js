@@ -17,4 +17,4 @@ const summationOf = (value) => {
 
 // Fazendo a exportação das funções para que outros arquivos
 // possam utiliza-las
-module.exports = { soma, summationOf };
+module.exports = { summationOf };
