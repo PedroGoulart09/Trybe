@@ -1,28 +1,32 @@
 import React, { Component } from 'react'
+import Btn from './Btn'
 
 export default class App extends Component {
+
   constructor(props){
     super(props)
-    this.console1 = this.console1.bind(this)
     this.state = {
-      numerosDeCliques: 0
+      Contador: 0
     }
+    this.handClick = this.handClick.bind(this)
   }
-  
-  console1() {
-    this.setState((estado, props) =>({
-      numerosDeCliques:estado.numerosDeCliques +1
-      
-    }
-      ))
-  }
+
+handClick(){
+ this.setState((state,_props) => ({
+   Contador: state.Contador +1
+ }))
+}
+
 
   render() {
     return (
       <div>
-        <button onClick={this.console1 }>{this.state.numerosDeCliques}</button>
-  
+        <Btn />
+        <button onClick={this.handClick}>{this.state.Contador}</button>
       </div>
     )
   }
 }
+
+
+ 
