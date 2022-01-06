@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Btn from './Btn'
+import Btn from './components/Btn'
+import Input from './components/input'
 
 export default class App extends Component {
 
@@ -23,6 +24,7 @@ handClick(){
       <div>
         <Btn />
         <button onClick={this.handClick}>{this.state.Contador}</button>
+        <Input />
       </div>
     )
   }
