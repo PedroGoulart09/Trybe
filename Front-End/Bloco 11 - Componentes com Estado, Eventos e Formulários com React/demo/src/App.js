@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Btn from './components/Btn'
-import Input from './components/input'
+import Input from './components/ComponentPrincipal'
 
 export default class App extends Component {
 
@@ -17,7 +17,6 @@ handClick(){
    Contador: state.Contador +1
  }))
 }
-
 
   render() {
     return (
