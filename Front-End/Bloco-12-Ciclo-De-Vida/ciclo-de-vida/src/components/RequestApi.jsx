@@ -40,7 +40,7 @@ export default class RequestApi extends Component {
     }
 
     render() {
-        const { storedJokes } = this.state;
+        const { storedJokes,jokeObj } = this.state;
         const loadingElement = <span>Loading...</span>;
         return (
             <div>
@@ -50,6 +50,8 @@ export default class RequestApi extends Component {
                 </span>
 
                 <span>RENDERIZAÇÃO CONDICIONAL</span>
+
+                <h3>{jokeObj ? jokeObj.joke : loadingElement }</h3>
 
 
             </div>
