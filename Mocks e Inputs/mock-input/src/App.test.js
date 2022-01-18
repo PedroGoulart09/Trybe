@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
-
+import userEvent from '@testing-library/user-event';
 
 test('Verificar se retorno da API esta na tela', async () => {
 
@@ -19,3 +19,19 @@ global.fetch = (url) => {
   const linkElement = await screen.findByText('Whiteboards ... are remarkable');
   expect(linkElement).toBeInTheDocument();
 });
+
+test('Verificar retorno dos input',  () => {
+
+ 
+  
+    render(<App />);
+    const inputNome = screen.getByRole('textbox', { name: /nome/i });
+    expect(inputNome).toBeInTheDocument();
+    expect(inputNome).toHaveValue('')
+ 
+    userEvent.type(inputNome, 'Estudante Da Trybe')
+
+    expect(inputNome).toHaveValue('Estudante Da Trybe')
+
+  });
+
