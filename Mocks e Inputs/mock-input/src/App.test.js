@@ -33,5 +33,12 @@ test('Verificar retorno dos input',  () => {
 
     expect(inputNome).toHaveValue('Estudante Da Trybe')
 
+    const inputEmail = screen.getByLabelText('Email:')
+    expect(inputEmail).toBeInTheDocument();
+    expect(inputEmail).toHaveValue('');
+
+    userEvent.type(inputEmail, 'teste@email.com')
+    expect(inputEmail).toHaveValue('teste@email.com');
+
   });
 
