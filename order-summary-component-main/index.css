@@ -58,7 +58,6 @@ body {
     flex-direction: column;
 }
 
-.card section .container div h3 {
     font-size: 20px;
     margin-bottom: 0;
 }
@@ -68,9 +67,6 @@ body {
     padding: 0;
 }
 
-.card section button {
-    border-radius: 30px;
-    width: 80%;
-    background-color: #0937db;
-    font-size: 25px;
-}
+
+
+

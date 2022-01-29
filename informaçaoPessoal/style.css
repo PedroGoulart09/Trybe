@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+.barrinha {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 80%,
+    #1a9274 80%,
+    #bcb9b9 80%
+  );
+  padding: 0px 150px;
+}
+.barrinha p {
+  text-align: center;
+  color: #fff;
+}
+.barrinha2 {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 50%,
+    #1a9274 50%,
+    #bcb9b9 50%
+  );
+  padding: 0px 150px;
+}
+.barrinha3 {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 40%,
+    #1a9274 40%,
+    #bcb9b9 40%
+  );
+  padding: 0px 150px;
+}
+.barrinha4 {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 30%,
+    #1a9274 30%,
+    #bcb9b9 30%
+  );
+  padding: 0px 150px;
+}
+.barrinha5 {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 80%,
+    #1a9274 80%,
+    #bcb9b9 80%
+  );
+  padding: 2px 150px;
+}
+.barrinha6 {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 50%,
+    #1a9274 50%,
+    #bcb9b9 50%
+  );
+  padding: 2px 150px;
+}
+.barrinha7 {
+  width: 10%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 5%;
+
+  background: linear-gradient(
+    to right,
+    #1a9274 0%,
+    #1a9274 20%,
+    #1a9274 20%,
+    #bcb9b9 20%
+  );
+  padding: 2px 150px;
+}
+h3 {
+  padding-left: 20px;
+  margin-top: 60px;
+  color: #333;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#pedro {
+  width: 425px;
+  border-radius: 5px;
+}
+#container {
+  display: flex;
+  margin-top: 40px;
+}
+aside img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding-top: 50px;
+  width: 30px;
+
+}
+aside p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-top: -21px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+.card-all {
+  background-color: #fff;
+  margin-left: 98px;
+  width: 488px;
+  padding: 0px 0px 100px;
+  margin-top: -4px;
+  border-radius: 5px;
+}
+.borda {
+  border: 1px solid rgb(228, 228, 228);
+  margin-top: 30px;
+  
+}
+
+
+h2 {
+  margin-left: 40px;
+  margin-top: 50px;
+  color: #333;
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.linguagens {
+  display: flex;
+}
+.linguagens h2 {
+  margin-top: 100px;
+  font-size: 20px;
+  color: #333;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.linguagens img {
+  margin-top: 100px;
+  width: 20px;
+}
+#container2 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  width: 100%;
+
+  gap: 50px;
+}
+.card-2 {
+  background-color: #fff;
+  height: 80vh;
+  width: 70%;
+}
+.card-2 img {
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 50px;
+}
+.card-2 h2 {
+  margin: 80px;
+  margin-top: -40px;
+  color: rgb(73, 72, 72);
+  
+}
+.card-2 h3 {
+  font-size:18px;
+  color: rgb(87, 87, 87);
+  margin-top: -30px;
+  margin-left:20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.front {
+  display: flex;
+  gap: 10px;
+}
+.front p {
+  color: rgb(4, 148, 124);
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.front img {
+  position: relative;
+  left: 20px;
+  width: 30px;
+}
+
+.front h4 {
+  color: #fff;
+  background-color: rgb(4, 148, 124);
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+h5{
+  margin-left: 30px;
+  margin-top:20px;
+  font-size:18px;
+  color: rgb(87, 87, 87);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.infomation p {
+  position: relative;
+  left: 20px;
+  margin-top: 30px;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.card-3 {
+  background-color: #fff;
+  height: 80vh;
+  width: 70%;
+}

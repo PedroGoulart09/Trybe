@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(126, 125, 125);
+  width: 25%;
+  margin-top: 40px;
+  padding: 30px 0px;
+  margin-left: 40px;
+}
+header h1 {
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+header img {
+  margin-left: 20px;
+  width: 30px;
+}
+.container {
+  display: flex;
+}
+#content {
+  margin-left: 30px;
+}
+.pedro {
+  width: 300px;
+}
+.remeber p {
+  font-size: 20px;
+  margin-top: 16px;
+  color: rgb(82, 81, 81);
+}
+.date {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.date img {
+  width: 30px;
+}
+.date p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.reply2 {
+  display: flex;
+  gap: 18px;
+}
+.reply {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: rgb(216, 208, 208);
+  width: 30%;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.final-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 40px;
+}
+.reply img {
+  width: 30px;
+}
+.p p {
+  position: relative;
+  right: 40px;
+  margin: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.border{
+    margin-top: 40px;
+    border: 1px solid rgb(185, 185, 185);
+}
+.Forward {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: rgb(216, 208, 208);
+    width: 30%;
+    padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Forward img {
+    width: 30px;
+}
+#card-all {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  width: 25%;
+  margin-left: 40px;
+}
+.back {
+  width: 23.2%;
+  margin-left: 39px;
+
+  padding: 0px 0px 400px;
+}
+
+#card-all p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.information {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+.information p {
+  margin: 10px;
+}
+.information img {
+  width: 40px;
+}

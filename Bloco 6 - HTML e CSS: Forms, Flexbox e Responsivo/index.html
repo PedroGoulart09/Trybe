@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container mb-3">
+    <h1 class="">Formulário</h1>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <div class="container mb-3">
+            <label for="nome-completo">Nome completo:</label>
+            <input class="form-control" type="text" name="nome" id="nome-completo" placeholder="Digite seu nome"
+                required>
+        </div>
+        <div class="container mb-3">
+            <label for="input-email">e-mail:</label>
+            <input class="form-control" type="email" name="email" id="input-email" placeholder="Digite seu e-mail"
+                required>
+        </div>
+        <div class="container mb-3">
+            <label for="">Estado onde você mora:</label>
+            <select class="form-control" name="estado" id="input-estado">
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="ap" selected>Amapá</option>
+                <option value="rs"></option>
+            </select>
+        </div>
+        <div class="container mb-3">
+
+            <p>Selecione sua foto:</p>
+            <input class="form-control btn btn-warning" type="file" name="foto" id="foto-perfil">
+        </div>
+        <div class="container mb-3">
+            <p>Escreva algo sobre você</p>
+            <textarea class="form-control" name="sobre-mim" id="textarea-1" cols="30" rows="5"></textarea>
+        </div>
+        <div class="container mb-3">
+            <p>Digite sua senha:</p>
+            <label for="input-senha"></label>
+            <input class="form-control" type="text" name="senha" id="input-senha" required>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar formulário</button>
+    </form>
+</body>
+
+</html>

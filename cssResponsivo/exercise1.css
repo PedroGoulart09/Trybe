@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 30px;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+}
+main {
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-color: red;
+    font-size: 20px;
+  }
+  figure {
+    float: left;
+    width: 40%;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: blue;
+    font-size: 40px;
+    margin: 30px;
+    max-width: 80%;
+  }
+}
