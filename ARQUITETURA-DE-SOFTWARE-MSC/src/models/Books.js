@@ -1,5 +1,5 @@
 
-const connection = require('./connection');
+const connection = require('../bd/connection');
 const getBooks = async () => {
     const [books] = await connection.execute(
         'select id, title, author_id from model_example.books;',

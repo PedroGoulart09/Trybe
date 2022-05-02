@@ -1,4 +1,4 @@
-const connection = require('./connection');
+const connection = require('../bd/connection');
 
 const isValidUsers = async (firstName, lastName, email, password) => {
     if (!firstName || !lastName) return false;

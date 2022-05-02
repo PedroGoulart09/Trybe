@@ -2,13 +2,14 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
+const authorRouter = require('./src/routers/author.router')
 app.use(bodyParser.json())
 
 
-const Author = require('./models/Author');
-const Books = require('./models/Books');
-const users = require('./models/users');
+const Books = require('./src/models/Books');
+const users = require('./src/models/users');
 
+app.use(authorRouter)
 
 app.get('/books', async (req, res) => {
     const books = await Books.getBooks();
@@ -23,21 +24,7 @@ app.post('/books', async (req, res) => {
     res.status(200).json({ message: 'Book created' })
 })
 
-app.get('/authors', async (_req, res) => {
-    const authors = await Author.getAll();
-    res.status(200).json(authors);
-})
 
-app.get('/authors/:id', Author.findById)
-
-app.post('/authors', async (req, res) => {
-    const { firstName, middleName, lastName } = req.body;
-    if (!Author.isValid(firstName, middleName, lastName)) return res.status(400).json({ message: 'invalid' })
-
-    await Author.createUser(firstName, middleName, lastName)
-
-    return res.status(201).json({ message: 'criado com sucesso' })
-})
 
 
 app.get('/users', async (req, res) => {
