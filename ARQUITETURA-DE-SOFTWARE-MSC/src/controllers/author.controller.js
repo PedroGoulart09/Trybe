@@ -3,7 +3,7 @@ const service = require('../services/author.service')
 
 const getAuthors = async (_req, res) => {
     const authors = await service.getAll();
-    res.status(200).json(authors);
+    return res.status(200).json(authors);
 }
 
 const createAuthor = async (req, res) => {
@@ -18,7 +18,8 @@ const createAuthor = async (req, res) => {
 const findById = async (req, res) => {
     const { id } = req.params;
     const [author] = await service.findById(Number(id));
-    console.log(author); lastName
+    if (author.length === 0) return res.status(400).json({ message: 'Invalid ID' })
+    return res.status(200).json(author)
 }
 
 module.exports = {

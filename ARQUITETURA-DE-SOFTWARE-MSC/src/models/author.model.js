@@ -1,4 +1,4 @@
-const connection = require('../bd/connection');
+const connection = require('../connection');
 
 const createAuthor = async (firstName, lastName) => {
     return connection.execute("INSERT INTO model_example.authors (first_name, last_name) VALUES(?,?)", [firstName, lastName])

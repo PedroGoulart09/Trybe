@@ -10,6 +10,4 @@ router.get('/authors/:id', findById)
 router.post('/authors', createAuthor)
 
 
-
-
 module.exports = router;

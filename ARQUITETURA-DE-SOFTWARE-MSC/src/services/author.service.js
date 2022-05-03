@@ -1,7 +1,6 @@
-const connection = require('../bd/connection')
+const connection = require('../connection')
 const authorModel = require('../models/author.model')
 
-// Busca todas as pessoas autoras do banco.
 
 const createAuthor = async (firstName, lastName) => {
     return authorModel.createAuthor(firstName, lastName)
